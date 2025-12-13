@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icônica - Evento Clicável</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .clickable-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .clickable-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 60px rgba(255, 107, 53, 0.6);
+        }
+
+        .info-text {
+            color: #fff;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .info-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- O caminho da imagem foi ajustado para './cartaz_iconica.png' para garantir que o navegador procure na pasta atual. -->
+        <a href="https://uticket.com.br/solucoes?gad_campaignid=21732104622" target="_blank">
+            <img src="./cartaz_iconica.png" alt="Evento Icônica" class="clickable-image">
+        </a>
+        <p class="info-text">✨ Clique na imagem para comprar ingressos ✨</p>
+    </div>
+</body>
+</html>
