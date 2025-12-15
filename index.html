@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Icônica - Evento Clicável</title>
+
+    <!-- Redireciona em 3s -->
+    <meta http-equiv="refresh" content="3;url=https://uticket.com.br/event/01LM50NDP9PCT7">
+
     <style>
         * {
             margin: 0;
@@ -55,13 +59,21 @@
             }
         }
     </style>
+
+    <script>
+        // Fallback (caso o meta refresh seja bloqueado por alguma política/extensão)
+        setTimeout(() => {
+            window.location.href = "https://uticket.com.br/event/01LM50NDP9PCT7";
+        }, 3000);
+    </script>
 </head>
 <body>
     <div class="container">
-        <!-- O caminho da imagem foi ajustado para './cartaz_iconica.png' para garantir que o navegador procure na pasta atual. -->
-        <a href="https://uticket.com.br/event/01LM50NDP9PCT7" target="_blank">
+        <a href="https://uticket.com.br/event/01LM50NDP9PCT7" target="_blank" rel="noopener noreferrer">
             <img src="./iconica-midia.jpg" alt="Evento Icônica" class="clickable-image">
         </a>
+
+        <p class="info-text">Redirecionando para o evento em 3 segundos…</p>
     </div>
 </body>
 </html>
